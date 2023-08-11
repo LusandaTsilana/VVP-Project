@@ -8,12 +8,14 @@ export default {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        customColor: 'rgba(202, 220, 199, 1)',
+      },
+    },
   },
 
-  variants: {
-    extend: {},
-  },
+  variants: {},
 
   plugins: [],
 }
