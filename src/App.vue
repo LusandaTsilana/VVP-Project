@@ -1,13 +1,17 @@
-<script setup>
-
-//pages set-up
-import Home from '@/views/Home.vue'
-
-</script>
-
 <template>
-    <router-view />
-  
+    <div class = "bg-white h-screen">
+        <Navbar/>
+        </div>
+        
 </template>
 
+<script>
+import Navbar from "@/views/Navbar.vue";
 
+export default {
+    name: "App",
+    components: {
+        Navbar,
+    },
+};
+</script>
