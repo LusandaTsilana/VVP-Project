@@ -6,7 +6,7 @@
     
             <div class = "flex items-center cursor-pointer" href = "Home.vue">
                 <span class="mr-1">
-                    <img class="w-24 md:w-24" src="/src/assets/images/lusanda (1).png" alt="logo">
+                    <img class="w-20 xl:w-24 2xl:w-28" src="/src/assets/images/lusanda (1).png" alt="logo">
                 </span>
 
             </div>
@@ -19,7 +19,7 @@
 
             <ul class = "font-semibold md:flex md:items-center md:px-0 px-10 md:pb-0 pb-10 md:static absolute bg-customColor shadow md:shadow-none w-full md:w-auto top-35 duration-500 ease-in md:mt-0 mt-4" :class="[open ? 'right-0' :'right-[-100%]']">
             <li class="md:mx-4 md:my-0 my-8 no-underline hover:underline" v-for = "link in Links">
-                <a :href = "link.link" class="text-xl xl:2xl" >{{ link.name }}</a>
+                <a :href = "link.link" class="text-lg xl:xl 2xl:2xl" >{{ link.name }}</a>
             </li>
             
             </ul>
