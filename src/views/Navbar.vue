@@ -1,26 +1,28 @@
 <template>
     
-
-    <div class = "md:bg-customColor shadow text-black-300 py-3.5 px-6  md:flex justify-between 
-    items-center">
+    <nav class="md:bg-customColor shadow">
+        <div class = "sticky text-black-300  md:flex md:w-4/6 justify-between py-3.5 px-12 
+            items-center ">
     
-        <div class = "flex items-center cursor-pointer" href = "#">
-            <span class="mr-1">
-                <img src="/src/assets/images/lusanda (1).png" alt="logo" width="83.08" height="80">
+            <div class = "flex items-center cursor-pointer" href = "#">
+                <span class="mr-1">
+                    <img src="/src/assets/images/lusanda (1).png" alt="logo" width="83.08" height="80">
+                </span>
+
+            </div>
+
+            <span @click="MenuOpen()" class = "absolute md:hidden right-7 top-1.5 cursor-pointer text-3xl">
+            <i :class="[open ? 'bi bi-x' : 'bi bi-filter-left', 'hover:bg-customColor']"></i>
             </span>
 
-        </div>
-
-        <span @click="MenuOpen()" class = "absolute md:hidden right-7 top-1.5 cursor-pointer text-4xl">
-            <i :class="[open ? 'bi bi-x' : 'bi bi-filter-left']"></i>
-        </span>
-
-        <ul class = "font-semibold md:flex md:items-center gap-[1vw] md:px-0 px-10 md:pb-0 pb-2 md:static absolute bg-customColor sm:shadow md:shadow-none md:w-auto w-full duration-700 ease-in md:mt-0 mt-4" :class="[open ? 'left-0' :'left-[-100%]']">
+            <ul class = "font-semibold md:flex md:items-center gap-[1vw] md:px-0 px-10 md:pb-0 pb-2 md:static absolute bg-customColor sm:shadow md:shadow-none w-full md:w-auto  duration-500 ease-in md:mt-0 mt-4" :class="[open ? 'right-0' :'right-[-100%]']">
             <li class="md:mx-4 md:my-0 my-8 no-underline hover:underline" v-for = "link in Links">
-                <a :href = "link.link" class="text-xl" >{{ link.name }}</a>
+                <a :href = "link.link" class="text-lg md:text-xl" >{{ link.name }}</a>
             </li>
-        </ul>
+            
+            </ul>
     </div>
+</nav>
 
 </template>
 
