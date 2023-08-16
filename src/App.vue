@@ -8,11 +8,15 @@
 
         </header>
 
-        <!--<footer>
+        <main class="bg-white h-screen" >
+
+        </main>
+
+        <footer>
             <div>
-                <Footer/>
+                <FooterBand/>
             </div>
-        </footer>-->
+        </footer>
 
     </body>
     
@@ -23,12 +27,13 @@
 
 <script>
 import Navbar from "@/views/Navbar.vue";
-//import Footer from "@views/Footer.vue";
+import FooterBand from "@/views/FooterBand.vue";
 
 export default {
     name: "App",
     components: {
         Navbar,
+        FooterBand,
     },
 };
 </script>
