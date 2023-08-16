@@ -11,7 +11,7 @@ export default {
     extend: {
       colors: {
         customColor: 'rgba(202, 220, 199, 1)',
-        
+      
       },
     },
   },

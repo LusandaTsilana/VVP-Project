@@ -1,18 +1,26 @@
-<template>
-    <body class = "bg-white h-screen">
+<script setup>
+import Navbar from "@/views/Navbar.vue";
+import FooterBand from "@/views/FooterBand.vue";
+import Home from "@/views/Home.vue";
+</script>
 
-        <header>
-            <div>
+<template>
+    <body class = "bg-white">
+
+        <header class="">
+            <div class="">
                 <Navbar/>
             </div>
 
         </header>
 
-        <main class="bg-white h-screen" >
-
+        <main class="bg-white flex-grow px-4 py-32" >
+            <div>
+                <Home/>
+            </div>
         </main>
-
-        <footer>
+            
+        <footer class="py-4">
             <div>
                 <FooterBand/>
             </div>
@@ -26,14 +34,14 @@
 </template>
 
 <script>
-import Navbar from "@/views/Navbar.vue";
-import FooterBand from "@/views/FooterBand.vue";
+
 
 export default {
     name: "App",
-    components: {
+    views: {
         Navbar,
         FooterBand,
+        Home,
     },
 };
 </script>
