@@ -1,14 +1,13 @@
 <script setup>
 import Navbar from "@/views/Navbar.vue";
 import FooterBand from "@/views/FooterBand.vue";
-import Home from "@/views/Home.vue";
 </script>
 
 <template>
     <body class = "bg-white">
 
         <header class="">
-            <div class="">
+            <div id="app">
                 <Navbar/>
             </div>
 
@@ -41,7 +40,7 @@ export default {
     views: {
         Navbar,
         FooterBand,
-        Home,
+        
     },
 };
 </script>
